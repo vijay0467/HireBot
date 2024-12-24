@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  font-family:"Poppins",serif;
+  font-weight:500;
+  font-style:normal;
+}
+
+
+body{
+  background-color: #faa8f9;
+  background-image: linear-gradient(90deg, #faa8f9 0%, #DDD6F3 100%);
+  
+
+}
+
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+   
+}
+
+.card-hover:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.foot{
+  width:100%;
+  margin-top: 1%;
+}
+ 
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+ 
+
+/* Define the hover effect for images */
+.img-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  animation: fadeInRight 2s;
+  animation: fadeInUp 2s;
+  animation: fadeInLeft 2s;
+}
+
+.img-hover:hover {
+  transform: scale(1.05); /* Slightly enlarge the image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow */
+}
